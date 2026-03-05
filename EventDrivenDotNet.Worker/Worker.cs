@@ -1,23 +1,19 @@
-namespace Event;
+using EventDrivenDotNet.Contracts;
 
-public class Worker : BackgroundService
+namespace EventDrivenDotNet.Worker;
+
+public sealed class Worker(ILogger<Worker> logger, IEventBus bus) : BackgroundService
 {
-    private readonly ILogger<Worker> _logger;
-
-    public Worker(ILogger<Worker> logger)
+    protected override Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        _logger = logger;
-    }
-
-    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
-    {
-        while (!stoppingToken.IsCancellationRequested)
+        bus.Subscribe<PolicyCreated>((evt, ct) =>
         {
-            if (_logger.IsEnabled(LogLevel.Information))
-            {
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-            }
-            await Task.Delay(1000, stoppingToken);
-        }
+            logger.LogInformation("Handled PolicyCreated: {PolicyId} for {UserId} at {Time}",
+                evt.PolicyId, evt.UserId, evt.OccurredAtUtc);
+            return Task.CompletedTask;
+        });
+
+        logger.LogInformation("Worker started and subscribed to events.");
+        return Task.Delay(Timeout.Infinite, stoppingToken);
     }
 }

@@ -1,4 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<EventDrivenDotNet.Contracts.InMemoryEventBus>();
+builder.Services.AddSingleton<EventDrivenDotNet.Contracts.IEventBus>(sp => sp.GetRequiredService<EventDrivenDotNet.Contracts.InMemoryEventBus>());
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -32,6 +34,18 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast");
+
+app.MapPost("/events/policy-created", async (EventDrivenDotNet.Contracts.IEventBus bus) =>
+{
+    var evt = new EventDrivenDotNet.Contracts.PolicyCreated(
+        PolicyId: Guid.NewGuid(),
+        UserId: Guid.NewGuid(),
+        OccurredAtUtc: DateTime.UtcNow
+    );
+
+    await bus.PublishAsync(evt);
+    return Results.Ok(evt);
+});
 
 app.Run();
 
