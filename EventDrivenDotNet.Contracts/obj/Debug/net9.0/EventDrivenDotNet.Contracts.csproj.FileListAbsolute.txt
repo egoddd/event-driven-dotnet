@@ -1,0 +1,12 @@
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\bin\Debug\net9.0\EventDrivenDotNet.Contracts.deps.json
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\bin\Debug\net9.0\EventDrivenDotNet.Contracts.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\bin\Debug\net9.0\EventDrivenDotNet.Contracts.pdb
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\obj\Debug\net9.0\EventDrivenDotNet.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\obj\Debug\net9.0\EventDrivenDotNet.Contracts.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\obj\Debug\net9.0\EventDrivenDotNet.Contracts.AssemblyInfo.cs
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\obj\Debug\net9.0\EventDrivenDotNet.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\obj\Debug\net9.0\EventDrivenDotNet.Contracts.sourcelink.json
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\obj\Debug\net9.0\EventDrivenDotNet.Contracts.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\obj\Debug\net9.0\refint\EventDrivenDotNet.Contracts.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\obj\Debug\net9.0\EventDrivenDotNet.Contracts.pdb
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Contracts\obj\Debug\net9.0\ref\EventDrivenDotNet.Contracts.dll
