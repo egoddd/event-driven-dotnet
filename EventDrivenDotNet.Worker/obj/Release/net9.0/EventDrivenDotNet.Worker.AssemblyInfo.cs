@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventDrivenDotNet.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faeb16892957219f161e4a5f4071c52ecd33f127")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c217d1a7fe7aed914c96c58e88dca35cf106e3d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventDrivenDotNet.Worker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventDrivenDotNet.Worker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

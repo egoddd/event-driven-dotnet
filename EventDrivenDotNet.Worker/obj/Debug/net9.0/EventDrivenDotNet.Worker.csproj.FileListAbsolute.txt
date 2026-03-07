@@ -49,3 +49,10 @@ C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\obj\Debug\
 C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\obj\Debug\net9.0\ref\EventDrivenDotNet.Worker.dll
 C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Debug\net9.0\EventDrivenDotNet.Contracts.dll
 C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Debug\net9.0\EventDrivenDotNet.Contracts.pdb
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Debug\net9.0\MassTransit.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Debug\net9.0\MassTransit.Abstractions.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Debug\net9.0\MassTransit.RabbitMqTransport.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Debug\net9.0\RabbitMQ.Client.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Debug\net9.0\System.Threading.RateLimiting.dll

@@ -1,3 +1,6 @@
+using MassTransit;
+using EventDrivenDotNet.Contracts;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<EventDrivenDotNet.Contracts.InMemoryEventBus>();
 builder.Services.AddSingleton<EventDrivenDotNet.Contracts.IEventBus>(sp => sp.GetRequiredService<EventDrivenDotNet.Contracts.InMemoryEventBus>());
@@ -5,6 +8,18 @@ builder.Services.AddSingleton<EventDrivenDotNet.Contracts.IEventBus>(sp => sp.Ge
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddMassTransit(x =>
+{
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("localhost", "/", h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+    });
+});
 
 var app = builder.Build();
 
@@ -35,15 +50,10 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
-app.MapPost("/events/policy-created", async (EventDrivenDotNet.Contracts.IEventBus bus) =>
+app.MapPost("/events/policy-created", async (IPublishEndpoint publisher) =>
 {
-    var evt = new EventDrivenDotNet.Contracts.PolicyCreated(
-        PolicyId: Guid.NewGuid(),
-        UserId: Guid.NewGuid(),
-        OccurredAtUtc: DateTime.UtcNow
-    );
-
-    await bus.PublishAsync(evt);
+    var evt = new PolicyCreated(Guid.NewGuid(), Guid.NewGuid(), DateTime.UtcNow);
+    await publisher.Publish(evt);
     return Results.Ok(evt);
 });
 

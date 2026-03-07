@@ -33,3 +33,7 @@ C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.API\obj\Release\n
 C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.API\obj\Release\net9.0\EventDrivenDotNet.API.pdb
 C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.API\obj\Release\net9.0\EventDrivenDotNet.API.genruntimeconfig.cache
 C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.API\obj\Release\net9.0\ref\EventDrivenDotNet.API.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.API\bin\Release\net9.0\MassTransit.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.API\bin\Release\net9.0\MassTransit.Abstractions.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.API\bin\Release\net9.0\MassTransit.RabbitMqTransport.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.API\bin\Release\net9.0\RabbitMQ.Client.dll
