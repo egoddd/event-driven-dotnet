@@ -2,57 +2,6 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "MassTransit/9.0.1": {
-        "type": "package",
-        "dependencies": {
-          "MassTransit.Abstractions": "9.0.1",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Diagnostics.HealthChecks": "9.0.0",
-          "Microsoft.Extensions.Hosting.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Options": "9.0.0"
-        },
-        "compile": {
-          "lib/net9.0/MassTransit.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/MassTransit.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MassTransit.Abstractions/9.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0/MassTransit.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/MassTransit.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MassTransit.RabbitMQ/9.0.1": {
-        "type": "package",
-        "dependencies": {
-          "MassTransit": "9.0.1",
-          "RabbitMQ.Client": "7.2.0"
-        },
-        "compile": {
-          "lib/net9.0/MassTransit.RabbitMqTransport.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/MassTransit.RabbitMqTransport.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.Extensions.Configuration/9.0.12": {
         "type": "package",
         "dependencies": {
@@ -293,38 +242,6 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Diagnostics.HealthChecks/9.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Hosting.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
-          "Microsoft.Extensions.Options": "9.0.0"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/9.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {
-            "related": ".xml"
-          }
         }
       },
       "Microsoft.Extensions.FileProviders.Abstractions/9.0.12": {
@@ -661,7 +578,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "RabbitMQ.Client/7.2.0": {
+      "RabbitMQ.Client/7.2.1": {
         "type": "package",
         "dependencies": {
           "System.IO.Pipelines": "8.0.0",
@@ -749,75 +666,6 @@
     }
   },
   "libraries": {
-    "MassTransit/9.0.1": {
-      "sha512": "wYMV/TX9AQqG9ybG7i97Et2rjPgIYXmYr3RV5k7ogr/BvPnAF8ohcmeESoTYSgQFWDi2lurKx57uPg1MJ9R0jw==",
-      "type": "package",
-      "path": "masstransit/9.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "NuGet.README.md",
-        "lib/net10.0/MassTransit.dll",
-        "lib/net10.0/MassTransit.xml",
-        "lib/net472/MassTransit.dll",
-        "lib/net472/MassTransit.xml",
-        "lib/net8.0/MassTransit.dll",
-        "lib/net8.0/MassTransit.xml",
-        "lib/net9.0/MassTransit.dll",
-        "lib/net9.0/MassTransit.xml",
-        "lib/netstandard2.0/MassTransit.dll",
-        "lib/netstandard2.0/MassTransit.xml",
-        "masstransit.9.0.1.nupkg.sha512",
-        "masstransit.nuspec",
-        "mt-logo-small.png"
-      ]
-    },
-    "MassTransit.Abstractions/9.0.1": {
-      "sha512": "Rh3Bj/8VOdaUat2Zepbe1cfqQ+20Pqd9zoUme8w50qXISZ9p6yuxBXNNBazS16TN6Kfd4FLxuMUtjY928Rxqdw==",
-      "type": "package",
-      "path": "masstransit.abstractions/9.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "NuGet.README.md",
-        "lib/net10.0/MassTransit.Abstractions.dll",
-        "lib/net10.0/MassTransit.Abstractions.xml",
-        "lib/net472/MassTransit.Abstractions.dll",
-        "lib/net472/MassTransit.Abstractions.xml",
-        "lib/net8.0/MassTransit.Abstractions.dll",
-        "lib/net8.0/MassTransit.Abstractions.xml",
-        "lib/net9.0/MassTransit.Abstractions.dll",
-        "lib/net9.0/MassTransit.Abstractions.xml",
-        "lib/netstandard2.0/MassTransit.Abstractions.dll",
-        "lib/netstandard2.0/MassTransit.Abstractions.xml",
-        "masstransit.abstractions.9.0.1.nupkg.sha512",
-        "masstransit.abstractions.nuspec",
-        "mt-logo-small.png"
-      ]
-    },
-    "MassTransit.RabbitMQ/9.0.1": {
-      "sha512": "/ZfrA97Y9vlTkaRAekJrPm/bLj20RJbZLvxrphCHg1aVKWK4v9RiMj2g4TFFYHybaOQk+L5kNxAS8bZ3WQg1Iw==",
-      "type": "package",
-      "path": "masstransit.rabbitmq/9.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "NuGet.README.md",
-        "lib/net10.0/MassTransit.RabbitMqTransport.dll",
-        "lib/net10.0/MassTransit.RabbitMqTransport.xml",
-        "lib/net472/MassTransit.RabbitMqTransport.dll",
-        "lib/net472/MassTransit.RabbitMqTransport.xml",
-        "lib/net8.0/MassTransit.RabbitMqTransport.dll",
-        "lib/net8.0/MassTransit.RabbitMqTransport.xml",
-        "lib/net9.0/MassTransit.RabbitMqTransport.dll",
-        "lib/net9.0/MassTransit.RabbitMqTransport.xml",
-        "lib/netstandard2.0/MassTransit.RabbitMqTransport.dll",
-        "lib/netstandard2.0/MassTransit.RabbitMqTransport.xml",
-        "masstransit.rabbitmq.9.0.1.nupkg.sha512",
-        "masstransit.rabbitmq.nuspec",
-        "mt-logo-small.png"
-      ]
-    },
     "Microsoft.Extensions.Configuration/9.0.12": {
       "sha512": "ATSurHTbvZmw2ITcEyPPrKbtBh5FHA/p9JAMuKbgfurm+U+qPE5KkYHW7NIpayL3/ML3GGPmro1hOozJ/O8VuA==",
       "type": "package",
@@ -1171,44 +1019,6 @@
         "microsoft.extensions.diagnostics.abstractions.9.0.12.nupkg.sha512",
         "microsoft.extensions.diagnostics.abstractions.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "Microsoft.Extensions.Diagnostics.HealthChecks/9.0.0": {
-      "sha512": "cxsK9/Dx7Ka9sfiA1nY8XlSzIaWff5FNRw0+ls8yR+aGzmnah5JGKsTHgQrehjMwGAVud/pjiUZ9MWizfUSkTQ==",
-      "type": "package",
-      "path": "microsoft.extensions.diagnostics.healthchecks/9.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net462/Microsoft.Extensions.Diagnostics.HealthChecks.dll",
-        "lib/net462/Microsoft.Extensions.Diagnostics.HealthChecks.xml",
-        "lib/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll",
-        "lib/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.HealthChecks.xml",
-        "microsoft.extensions.diagnostics.healthchecks.9.0.0.nupkg.sha512",
-        "microsoft.extensions.diagnostics.healthchecks.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/9.0.0": {
-      "sha512": "H1IbHm/MnUgEV0N07WrkPBIIoX7isP6IPaqUdZ3CwbMcUVDGIu+okamW28kyDRfIiZqbTbyHuNIkr4ZSHPyvDw==",
-      "type": "package",
-      "path": "microsoft.extensions.diagnostics.healthchecks.abstractions/9.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net462/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
-        "lib/net462/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.xml",
-        "lib/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
-        "lib/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.xml",
-        "microsoft.extensions.diagnostics.healthchecks.abstractions.9.0.0.nupkg.sha512",
-        "microsoft.extensions.diagnostics.healthchecks.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.FileProviders.Abstractions/9.0.12": {
@@ -1694,10 +1504,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "RabbitMQ.Client/7.2.0": {
-      "sha512": "PPQ7cF7lwbhqC4up6en1bTUZlz06YqQwJecOJzsguTtyhNA7oL5uNDZIx/h6ZfcyPZV4V3DYKSCxfm4RUFLcbA==",
+    "RabbitMQ.Client/7.2.1": {
+      "sha512": "YKXEfg9fVQiTKgZlvIhAfPSFaamEgi8DsQmisCH0IAsU4FYLrtoguDrDj6JtJVGUt40QPnBLRH6fTQcAC4qsOg==",
       "type": "package",
-      "path": "rabbitmq.client/7.2.0",
+      "path": "rabbitmq.client/7.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1707,7 +1517,7 @@
         "lib/net8.0/RabbitMQ.Client.xml",
         "lib/netstandard2.0/RabbitMQ.Client.dll",
         "lib/netstandard2.0/RabbitMQ.Client.xml",
-        "rabbitmq.client.7.2.0.nupkg.sha512",
+        "rabbitmq.client.7.2.1.nupkg.sha512",
         "rabbitmq.client.nuspec"
       ]
     },
@@ -1812,9 +1622,8 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "EventDrivenDotNet.Contracts >= 1.0.0",
-      "MassTransit >= 9.0.1",
-      "MassTransit.RabbitMQ >= 9.0.1",
-      "Microsoft.Extensions.Hosting >= 9.0.12"
+      "Microsoft.Extensions.Hosting >= 9.0.12",
+      "RabbitMQ.Client >= 7.2.1"
     ]
   },
   "packageFolders": {
@@ -1871,17 +1680,13 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
-          "MassTransit": {
-            "target": "Package",
-            "version": "[9.0.1, )"
-          },
-          "MassTransit.RabbitMQ": {
-            "target": "Package",
-            "version": "[9.0.1, )"
-          },
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
             "version": "[9.0.12, )"
+          },
+          "RabbitMQ.Client": {
+            "target": "Package",
+            "version": "[7.2.1, )"
           }
         },
         "imports": [

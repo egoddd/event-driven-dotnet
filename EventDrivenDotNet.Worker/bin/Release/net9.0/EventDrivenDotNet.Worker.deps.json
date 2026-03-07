@@ -9,7 +9,8 @@
       "EventDrivenDotNet.Worker/1.0.0": {
         "dependencies": {
           "EventDrivenDotNet.Contracts": "1.0.0",
-          "Microsoft.Extensions.Hosting": "9.0.12"
+          "Microsoft.Extensions.Hosting": "9.0.12",
+          "RabbitMQ.Client": "7.2.1"
         },
         "runtime": {
           "EventDrivenDotNet.Worker.dll": {}
@@ -374,6 +375,18 @@
           }
         }
       },
+      "RabbitMQ.Client/7.2.1": {
+        "dependencies": {
+          "System.IO.Pipelines": "8.0.0",
+          "System.Threading.RateLimiting": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.1.0"
+          }
+        }
+      },
       "System.Diagnostics.EventLog/9.0.12": {
         "runtime": {
           "lib/net9.0/System.Diagnostics.EventLog.dll": {
@@ -393,6 +406,15 @@
             "assetType": "runtime",
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.1225.60609"
+          }
+        }
+      },
+      "System.IO.Pipelines/8.0.0": {},
+      "System.Threading.RateLimiting/8.0.0": {
+        "runtime": {
+          "lib/net8.0/System.Threading.RateLimiting.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         }
       },
@@ -601,12 +623,33 @@
       "path": "microsoft.extensions.primitives/9.0.12",
       "hashPath": "microsoft.extensions.primitives.9.0.12.nupkg.sha512"
     },
+    "RabbitMQ.Client/7.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YKXEfg9fVQiTKgZlvIhAfPSFaamEgi8DsQmisCH0IAsU4FYLrtoguDrDj6JtJVGUt40QPnBLRH6fTQcAC4qsOg==",
+      "path": "rabbitmq.client/7.2.1",
+      "hashPath": "rabbitmq.client.7.2.1.nupkg.sha512"
+    },
     "System.Diagnostics.EventLog/9.0.12": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-Vw1vw3TSDo39tDUgseSTcQom6vtdKD6rns9S+Qmyp5apHOsR4y37cvTJ12dwKhFYDzsHXQOaFITS0YdjwwAsBA==",
       "path": "system.diagnostics.eventlog/9.0.12",
       "hashPath": "system.diagnostics.eventlog.9.0.12.nupkg.sha512"
+    },
+    "System.IO.Pipelines/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
+      "path": "system.io.pipelines/8.0.0",
+      "hashPath": "system.io.pipelines.8.0.0.nupkg.sha512"
+    },
+    "System.Threading.RateLimiting/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7mu9v0QDv66ar3DpGSZHg9NuNcxDaaAcnMULuZlaTpP9+hwXhrxNGsF5GmLkSHxFdb5bBc1TzeujsRgTrPWi+Q==",
+      "path": "system.threading.ratelimiting/8.0.0",
+      "hashPath": "system.threading.ratelimiting.8.0.0.nupkg.sha512"
     },
     "EventDrivenDotNet.Contracts/1.0.0": {
       "type": "project",

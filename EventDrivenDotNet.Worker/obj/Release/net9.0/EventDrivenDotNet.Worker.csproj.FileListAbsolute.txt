@@ -49,3 +49,5 @@ C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\obj\Releas
 C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\obj\Release\net9.0\EventDrivenDotNet.Worker.pdb
 C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\obj\Release\net9.0\EventDrivenDotNet.Worker.genruntimeconfig.cache
 C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\obj\Release\net9.0\ref\EventDrivenDotNet.Worker.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Release\net9.0\RabbitMQ.Client.dll
+C:\Users\hp\source\repos\event-driven-dotnet\EventDrivenDotNet.Worker\bin\Release\net9.0\System.Threading.RateLimiting.dll
